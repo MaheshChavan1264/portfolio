@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Materialize - Compiled and minified CSS-->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"
+    />
+    <!-- Font Awesome Icon - CSS-->
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <title>My Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon-16x16.png"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+	-->
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+    <!-- Custom Styles-->
+<link rel="stylesheet" href="style.css" />
+<!-- Navigation Menu-->
+<nav class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a
+        id="logo-container"
+        aria-label="Navigate to the beginning of the page"
+        href="#intro"
+        class="brand-logo teal-text"
+      >
+        <h1>
+          <b>Mahesh Chavan</b><span class="brown-text light"
+            >Studying Full Stack Development</span
+          >
+        </h1></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the About section"
+        href="#about"
+        class="waves-effect waves-dark teal-text"
+        ><i class="mdi-social-person small"></i><span>About</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Skills section"
+        href="#skills"
+        class="waves-effect waves-dark purple-text"
+        ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
+      >
+    </li>
+    
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Education section"
+        href="#education"
+        class="waves-effect waves-dark orange-text"
+        ><i class="mdi-social-school small"></i><span>Education</span></a
+      >
+    </li>
+    <li class="bold">
+        <a
+          aria-label="Navigate to the Awards section"
+          href="#awards"
+          class="waves-effect waves-dark red-text"
+          ><i class="mdi-action-grade small"></i><span>Personal Details</span></a
+        >
+      </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Contact section"
+        href="#contact"
+        class="waves-effect waves-dark brown-text"
+        ><i class="mdi-content-mail small"></i><span>Contact</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Open Mahesh's resume in a new tab"
+        href="https://drive.google.com/file/d/1mylQNcq36A9a_GFCALrsRPffGiYPFLh2/view?usp=sharing"
+        target="_blank"
+        class="waves-effect waves-dark grey-text text-darken-3"
+        ><i class="mdi-action-description small"></i><span>Resume</span></a
+      >
+    </li>
+  </ul>
+</nav>
+<nav class="hide-on-large only trigger z-depth-1">
+  <a
+    aria-label="Toggle visibility of the mobile navbar"
+    href="#"
+    data-activates="slide-out"
+    class="button-collapse"
+    ><i class="mdi-navigation-menu"></i
+  ></a>
+  <div class="name-title">
+    <a
+      id="name"
+      aria-label="Navigate to the beginning of the page"
+      href="#main"
+      class="teal-text"
+      >Mahesh Chavan</a
+    ><span class="brown-text light">Studying Full Stack Development</span>
+  </div>
+</nav>
+<nav class="hide-on-large only">
+  <ul id="slide-out" class="side-nav">
+    <li class="bold">
+      <a
+        aria-label="Navigate to the About section"
+        href="#about"
+        class="waves-effect waves-dark teal-text"
+        ><i class="mdi-social-person small"></i><span>About</span></a
+      >
+    </li>
+    
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Projects section"
+        href="#projects"
+        class="waves-effect waves-dark indigo-text"
+        ><i class="mdi-av-web small"></i><span>Projects</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Skills section"
+        href="#skills"
+        class="waves-effect waves-dark purple-text"
+        ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Awards section"
+        href="#awards"
+        class="waves-effect waves-dark red-text"
+        ><i class="mdi-action-grade small"></i><span>Personal Details</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Education section"
+        href="#education"
+        class="waves-effect waves-dark orange-text"
+        ><i class="mdi-social-school small"></i><span>Education</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Contact section"
+        href="#contact"
+        class="waves-effect waves-dark brown-text"
+        ><i class="mdi-content-mail small"></i><span>Contact</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Navigate to the Contact section"
+        href="#blog"
+        class="waves-effect waves-dark yellow-text text-dark-3"
+        ><i class="mdi-content-mail small"></i><span>Blog</span></a
+      >
+    </li>
+    <li class="bold">
+      <a
+        aria-label="Open Mahesh's Resume in a new tab"
+        href="https://drive.google.com/file/d/1mylQNcq36A9a_GFCALrsRPffGiYPFLh2/view?usp=sharing"
+        target="_blank"
+        class="waves-effect waves-dark grey-text text-darken-3"
+        ><i class="mdi-action-description small"></i><span>Resume</span></a
+      >
+    </li>
+  </ul>
+</nav>
+<!-- Main Content-->
+<main>
+  <section id="intro" class="section scrollspy full-height">
+    <div class="overlay"></div>
+    <div class="container">
+      <h2>
+        I want to <span class="teal">make things</span><br />that
+        <span class="underline">Which are made life easier of everyone.</span>.
+      </h2>
+    </div>
+  </section>
+  <section id="about" class="section scrollspy">
+    <h3 class="page-title white-text teal">About</h3>
+    <div class="container flow-text">
+      <blockquote>
+        <h2>
+          Studying the Full Stack Development for the web application and Software development with the passion and thoughtfully designed
+          the UI and the web application.
+        </h2>
+      </blockquote>
+      <p>
+        I always wanted to become a passionately Software developer and studying the things which will make me good to me
+        develop the useful and powerful software applications which are makes the best
+        and easier life for the everyone.
+      </p>
+      <p>
+        As a Student of the Full stack Development, I enjoy using my obsessive attention to detail,
+        my unequivocal love for making things, and my mission-driven work
+        ethic to literally change the world. That's why I’m excited to make
+        a big impact at a high growth company.
+      </p>
+      <p>
+        <strong>Current Focus</strong>:&nbsp;<a
+          aria-label="Navigate to the Inclusive Design Patterns homepage"
+          href="https://www.smashingmagazine.com/inclusive-design-patterns/"
+          >Nodejs</a
+        >&nbsp;//&nbsp;<a
+          aria-label="Navigate to the Full Stack React homepage"
+          href="https://www.fullstackreact.com/"
+          >React</a
+        >&nbsp;//&nbsp;<a
+          aria-label='Navigate to the article "Scalable CSS"'
+          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/"
+          >Design Web application</a
+        >
+        <a
+          aria-label="Navigate to the Full Stack React homepage"
+          href="https://www.fullstackreact.com/"
+          >Ruby on Rails</a>
+      </p>
+    </div>
+  </section>
+  <section id="skills" class="section scrollspy">
+    <h3 class="page-title white-text teal">Skills</h3>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Development</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="/python.jpg"
+                    class="responsive-img"
+                  />Python
+                </div>
+                <div class="col s4 m2">
+                  <img
+                    alt=""
+                    src="/java.png"
+                    class="responsive-img"
+                  />Java
+                </div>    
+            </div>
+            </div>
+          </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">HTML</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/html5.png"
+                class="responsive-img"
+              />HTML5
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">CSS</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/css3.png"
+                class="responsive-img"
+              />CSS3
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/sass.png"
+                class="responsive-img"
+              />SASS
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Javascript</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/react.png"
+                class="responsive-img"
+              />React
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/javascript.png"
+                class="responsive-img"
+              />Javascript
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/jquery.png"
+                class="responsive-img"
+              />jQuery
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/nodejs.png"
+                class="responsive-img"
+              />Node
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Back-End</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/ruby.png"
+                class="responsive-img"
+              />Ruby
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/rails.png"
+                class="responsive-img"
+              />Rails
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/postgresql.png"
+                class="responsive-img"
+              />PostgreSQL
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/mongodb.png"
+                class="responsive-img"
+              />MongoDB
+            </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/php.png"
+                  class="responsive-img"
+                />PHP
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Development Tools</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/web.png"
+                class="responsive-img"
+              />WebStrom
+            </div>
+            <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/phpstorm.png"
+                  class="responsive-img"
+                />PhpStorm
+              </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/idea.png"
+                  class="responsive-img"
+                />IntelliJ IDEA
+              </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/pycharm.png"
+                  class="responsive-img"
+                />Pycharm
+              </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/rubymine.png"
+                  class="responsive-img"
+                />RubyMine
+              </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/studio.jpeg"
+                  class="responsive-img"
+                />AndroidStudio
+              </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/code.png"
+                  class="responsive-img"
+                />VS Code
+              </div>  
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/sublime.png"
+                  class="responsive-img"
+                />SubLime Text
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Back-End</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/ruby.png"
+                class="responsive-img"
+              />Ruby
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/rails.png"
+                class="responsive-img"
+              />Rails
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/postgresql.png"
+                class="responsive-img"
+              />PostgreSQL
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/mongodb.png"
+                class="responsive-img"
+              />MongoDB
+            </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/php.png"
+                  class="responsive-img"
+                />PHP
+              </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/sql.png"
+                  class="responsive-img"
+                />SQLIte
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Operating Systems</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/ubuntu.png"
+                class="responsive-img"
+              />Ubuntu
+            </div>
+            <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/redhat.png"
+                  class="responsive-img"
+                />Red Hat
+              </div>
+              <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/10.png"
+                  class="responsive-img"
+                />Windows 10
+              </div>  
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-content">
+          <h4 class="brown-text light">Other</h4>
+          <div class="row text-center">
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/github.png"
+                class="responsive-img"
+              />Github
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/heroku.png"
+                class="responsive-img"
+              />Heroku
+            </div>
+            <div class="col s4 m2">
+              <img
+                alt=""
+                src="/photoshop.png"
+                class="responsive-img"
+              />Photoshop
+            </div>
+            <div class="col s4 m2">
+                <img
+                  alt=""
+                  src="/shell.png"
+                  class="responsive-img"
+                />Shell Scripting
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="education" class="section scrollspy">
+    <h3 class="page-title white-text teal">Education</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <p>
+                <span class="card-title"
+                  ><a href="https://www.mitaoe.ac.in/" class="teal-text hoverline"
+                    >MIT Academy of Engineering</a
+                  ></span
+                >
+              </p>
+              <p class="brown-text">Alandi, Pune</p>
+              <ul>
+                <li>B.Tech Electronics and Telecommunications Engineering</li>
+                <li>Embedded System</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <p>
+                <span class="card-title"
+                  ><a href="http://svitsolapur.org/" class="teal-text hoverline"
+                    >Swami Vivekanand Institute of Technology</a></span>
+                  </span
+                >
+              </p>
+              <p class="brown-text">Solapur, Maharashtra</p>
+              <ul>
+                <li>Diploma Electronics and Telecommunications Engineering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="awards" class="section scrollspy">
+    <h3 class="page-title white-text teal">Personal Details</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <p>
+                <span class="card-title"
+                  ><a
+                    target="_blank"
+                    class="teal-text hoverline"
+                    >About Me</a
+                  ></span
+                >
+              </p>
+              <ul>
+                <li>
+                    <b>Gender</b>: Male
+
+                </li>
+                <li>
+                    <b>Marital Status:</b>Unmarried
+                </li>
+                <li>
+                    <b>Date of Birth:</b> Aug. 10, 1995
+                </li>
+                <li>
+                    <b>Known Languages:</b>Marathi, Hindi, English
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <p>
+                <span class="card-title"
+                  ><a
+                    target="_blank"
+                    class="teal-text hoverline"
+                    >Emails</a
+                  ></span
+                >
+              </p>
+              <ul>
+                <li>
+                  <b>mahesh.chavan1264@gmail.com</b>
+                </li>
+                <li>
+                    <b>mtchavan@mitaoe.ac.in</b>
+                  </li>
+                  
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <p>
+                <span class="card-title"
+                  ><a
+                    target="_blank"
+                    class="teal-text hoverline"
+                    >Current Address</a
+                  ></span
+                >
+              </p>
+              <ul>
+                Flat No 407, Alandi Moshi raod Dudulgaon, Pune,
+                Maharashtra - 412105 
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <p>
+                <span class="card-title"
+                  ><a
+                    class="teal-text hoverline"
+                    >Permanent Address</a
+                  ></span
+                >
+              </p>
+              <ul>
+                At- Bhoire, Post- Narkhed, Tal- Mohol, DistSolapur, Solapur, Maharashtra - 413213
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <p>
+                <span class="card-title"
+                  ><a class="teal-text hoverline"
+                    >Personal Interests/ Hobbies</a
+                  ></span
+                >
+              </p>
+              <ul>
+                <li>
+                    Computer Gaming    
+                </li>
+                <li>
+                    Swimming    
+                </li>
+                <li>
+                    Listening Music    
+                </li>
+                <li>
+                    Watching Cartoons    
+                </li>
+                <li>
+                    These Hobbies refersh me    
+                </li>
+                
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section scrollspy full-height">
+    <h3 class="page-title white-text teal">Contact</h3>
+    <div class="container">
+      <p>
+        <a
+          aria-label="Email Mahesh"
+          href="mailto:mahesh.chavan1264@gmail.com"
+          data-position="top"
+          data-tooltip="Email Mahesh"
+          class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+          ><i class="fa fa-envelope"></i
+          ><a
+            aria-label="Email Mahesh"
+            href="mailto:mahesh.chavan1264@gmail.com"
+            class="hoverline"
+            >mahesh.chavan1264@gmail.com</a
+          ></a
+        >
+      </p>
+      <p>
+        <a
+          aria-label="View Mahesh on GitHub"
+          href="https://github.com/MaheshChavan1264"
+          target="_blank"
+          data-position="top"
+          data-tooltip="View Mahesh on GitHub"
+          class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+          ><i class="fa fa-github"></i
+          ><a
+            aria-label="Mahesh on Github"
+            href="http://github.com/MaheshChavan1264"
+            class="hoverline"
+            >github.com/MaheshChavan1264</a
+          ></a
+        >
+      </p>
+      <p>
+        <a
+          aria-label="View Mahesh on LinkedIn"
+          href="https://www.linkedin.com/in/mahesh-chavan-939738135/"
+          target="_blank"
+          data-position="top"
+          data-tooltip="View Mahesh on LinkedIn"
+          class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+          ><i class="fa fa-linkedin"></i
+          ><a
+            aria-label="Mahesh on LinkedIn"
+            href="https://www.linkedin.com/in/mahesh-chavan-939738135/"
+            class="hoverline"
+            >https://www.linkedin.com/in/mahesh-chavan-939738135/</a
+          ></a
+        >
+      </p>
+    </div>
+  </section>
+  </main>
+
+    <!--
+      Google Analytics
+      -------------------------------------------------
+      If you want to enable your own account, assign analyticsId to your
+      google analytics id, which should be the numbers following "UA-", e.g.
+      var analyticsId = "12345678-9"
+    -->
+    <script>
+      var analyticsId;
+
+      // If analytics id has been manually defined
+      if (analyticsId) {
+        // Initialize GA with local var
+        initGoogleAnalytics(analyticsId);
+      } else {
+        // Initialize GA with Netlify env var available via lamba function
+        fetch("/.netlify/functions/env_vars")
+          .then(getEnvVar)
+          .then(initGoogleAnalytics)
+          .catch(handleError);
+      }
+
+      // -------------------------------------------------
+      // Helper Functions
+      // --------------------------------------------------
+
+      function handleError(error) {
+        console.log("error", error);
+      }
+
+      function getEnvVar(response) {
+        // If the request was successful
+        if (response.ok) {
+          // Return the response text
+          return response.text();
+        } else {
+          // Return a rejected Promise object, triggering the .catch()
+          return Promise.reject(response);
+        }
+      }
+
+      // Set Up Google Analytics
+      function initGoogleAnalytics(analyticsId) {
+        if (analyticsId) {
+          // Inject the Google Analytics Tag Manager script into the DOM
+          analyticsUrl =
+            "https://www.googletagmanager.com/gtag/js?id=UA-" + analyticsId;
+          var ref = document.getElementsByTagName("script")[0];
+          var script = document.createElement("script");
+          script.src = analyticsUrl;
+          ref.parentNode.insertBefore(script, ref);
+
+          // Initialize Google Analytics
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "UA-" + analyticsId);
+        }
+      }
+    </script>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function () {
+        $(".scrollspy").scrollSpy();
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+          menuWidth: 190, // Default is 240
+          edge: "left", // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });
+      });
+    </script>
+
+    <!-- prettier-ignore -->
+    <small hidden>
+           ___                       ___           ___                    ___                                     ___
+          /\  \                     /\__\         /\  \                  /\__\                      ___          /\__\
+          \:\  \       ___         /:/ _/_        \:\  \                /:/ _/_       ___          /\  \        /:/ _/_
+           \:\  \     /\__\       /:/ /\  \        \:\  \              /:/ /\__\     /\__\         \:\  \      /:/ /\__\
+       ___ /::\  \   /:/__/      /:/ /::\  \   ___ /::\  \            /:/ /:/  /    /:/__/          \:\  \    /:/ /:/ _/_
+      /\  /:/\:\__\ /::\  \     /:/__\/\:\__\ /\  /:/\:\__\          /:/_/:/  /    /::\  \      ___  \:\__\  /:/_/:/ /\__\
+      \:\/:/  \/__/ \/\:\  \__  \:\  \ /:/  / \:\/:/  \/__/          \:\/:/  /     \/\:\  \__  /\  \ |:|  |  \:\/:/ /:/  /
+       \::/__/       ~~\:\/\__\  \:\  /:/  /   \::/__/                \::/__/       ~~\:\/\__\ \:\  \|:|  |   \::/_/:/  /
+        \:\  \          \::/  /   \:\/:/  /     \:\  \                 \:\  \          \::/  /  \:\__|:|__|    \:\/:/  /
+         \:\__\         /:/  /     \::/  /       \:\__\                 \:\__\         /:/  /    \::::/__/      \::/  /
+          \/__/         \/__/       \/__/         \/__/                  \/__/         \/__/      ~~~~           \/__/
+    </small>
+  </body>
+</html>
